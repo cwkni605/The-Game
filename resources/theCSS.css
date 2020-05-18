@@ -1,0 +1,76 @@
+@font-face{
+    font-family: 'textures';
+    src:
+        url('RPG_Game.otf') format('opentype');  
+} 
+
+p
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body
+{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 30% 20% 20% 5%;
+    height: 100vh;
+}
+
+#screen
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'textures';
+}
+
+#status
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 0px;
+    margin: 0px;
+    background-color: lightgray;
+}
+
+#menu
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll;
+    background-color: rgb(0, 132, 184);
+}
+#action
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding: 0px;
+    margin: 0px;
+    background-color: green;
+    overflow-y: scroll;
+}
+
+#input
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}

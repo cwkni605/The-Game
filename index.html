@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Author: connor Knight -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="resources/theCSS.css">
+        <link rel="icon" href="resources/icon.png" type="image/x-icon">
+        <title>Master The Manager</title>
+        <script src="resources/JS/enemies.js"></script>
+        <script src="resources/JS/equipment.js"></script>
+        <script src="resources/JS/spells.js"></script>
+        <script src="resources/JS/characters.js"></script>
+    </head>
+
+    <body onkeydown="inputReader(specificKey(event))">
+        <p id="screen" style="font-size: 3vw;">map</p>
+        <p id="status" style="font-size: 60px;">status</p>
+        <p id="menu" style="font-size: 60px;">menu</p>
+        <p id="action"></p>
+
+        <input placeholder="wasd: move,  m: menu,  I: shop,  numbers: doors" type="text" id="input">
+    </body>
+    <script src="resources/JS/theJS.js"></script>
+</html>
