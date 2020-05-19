@@ -52,5 +52,3 @@ class LHP{
         }
     }
 }
-
-console.log(new dullSword());

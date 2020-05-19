@@ -12,13 +12,62 @@
         <script src="resources/JS/characters.js"></script>
     </head>
 
-    <body onkeydown="inputReader(specificKey(event))">
-        <p id="screen" style="font-size: 3vw;">map</p>
-        <p id="status" style="font-size: 60px;">status</p>
-        <p id="menu" style="font-size: 60px;">menu</p>
-        <p id="action"></p>
-
-        <input placeholder="wasd: move,  m: menu,  I: shop,  numbers: doors" type="text" id="input">
+    <body>
+        <div id="body">
+            <table id="field">
+                <tr id="enemyHand">
+                    <td><div class="card"><h1>Hidden</h1><img src="resources/Icon.png" alt=""><p>???</p></div></td>
+                    <td><div class="card"><h1>Hidden</h1><img src="resources/Icon.png" alt=""><p>???</p></div></td>
+                    <td><div class="card"><h1>Hidden</h1><img src="resources/Icon.png" alt=""><p>???</p></div></td>
+                    <td><div class="card"><h1>Hidden</h1><img src="resources/Icon.png" alt=""><p>???</p></div></td>
+                    <td><div class="card"><h1>Hidden</h1><img src="resources/Icon.png" alt=""><p>???</p></div></td>
+                </tr>
+                <tr id="enemyCore">
+                    <td></td>
+                    <td></td>
+                    <th><div class="core"><img src="resources/Icon.png" alt=""><h1>Bad Guy</h1></div></th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="enemyTeam">
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                </tr>
+                <tr id="playerTeam">
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                    <th><div class="unit hero"><h1>unit name</h1><img src="resources/Icon.png" alt=""><p id="health">10/10</p><p id="mana">10/10</p></div></th>
+                </tr>
+                <tr id="playerCore">
+                    <td></td>
+                    <td></td>
+                    <td><div class="core"><img src="resources/Icon.png" alt=""><h1>user name here</h1></div></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="playerHand">
+                    <td><div class="card"><h1>card name</h1><img src="resources/Icon.png" alt=""><p>card description which could be long, like very long</p></div></td>
+                    <td><div class="card"><h1>card name</h1><img src="resources/Icon.png" alt=""><p>card description which could be long, like very long</p></div></td>
+                    <td><div class="card"><h1>card name</h1><img src="resources/Icon.png" alt=""><p>card description which could be long, like very long</p></div></td>
+                    <td><div class="card"><h1>card name</h1><img src="resources/Icon.png" alt=""><p>card description which could be long, like very long</p></div></td>
+                    <td><div class="card"><h1>card name</h1><img src="resources/Icon.png" alt=""><p>card description which could be long, like very long</p></div></td>
+                </tr>
+            </table>
+        </div>
     </body>
     <script src="resources/JS/theJS.js"></script>
 </html>
+<!--
+    dialoge layout
+
+    <div id="dialogeTo">
+            <img src="resources/Icon.png" alt="img" id="profileTo">
+            <h1 id="charName">This Is Nameus</h1>
+            <p id="dialoge">this is some text that needs to be. I like the turtles. They hate snakes. What do you animal like?</p>
+        </div>
+-->
