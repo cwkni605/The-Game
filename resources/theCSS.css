@@ -15,22 +15,23 @@ body
     margin: 0px;
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 
 #body{
     width: 90%;
     height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*this is for the battles_______________________________________________________________________________*/
 
 #field{
-    width: 80%;
+    width: 90%;
     height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(images/fieldBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,10 +46,12 @@ body
 
 #field .core{
     border-radius: 50%;
-    width: 100%;
+    width: 80%;
     height: 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: gold;
     border-style: groove;
     border-color: rgb(165, 81, 42);
@@ -61,7 +64,7 @@ body
 #field .core img{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 4;
     margin-left: auto;
     margin-right: auto;
@@ -72,21 +75,43 @@ body
     border-width: 4px;
 }
 
-#field .core h1{
+#field .core .name{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 5;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     background-color: rgb(165, 81, 42);
     border-radius: 20px;
     border: rgb(158, 68, 27) groove 4px;
 }
 
+#field .core .health{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    max-width: max-content;
+    height: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    background-color: rgb(245, 206, 155);
+    border-radius: 20px;
+    border: rgb(158, 68, 27) groove 4px;
+    color: red;
+    font-family: 'theFont';
+}
+
 /*the cards css_______________________________________________*/
 
 #field .card{
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
@@ -96,8 +121,6 @@ body
     border-color: gold;
     border-width: 4px;
     border-radius: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
     font-family: 'theFont';
 }
 
@@ -134,33 +157,37 @@ body
 
 #field .card p{
     height: 100%;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
     overflow: auto;
-    margin-left: 5%;
 }
 
 /*this is the unit css________________________________________*/
 
 #field .unit{
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 55% 30% 15%;
     background-color: rgb(245, 206, 155);
     border-style: groove;
-    border-color: gold;
-    border-width: 4px;
+    border-color: silver;
+    border-width: 6px;
     border-radius: 50%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+}
+
+#field .unit.hero{
+    border-color: gold;
+    border-width: 8px;
 }
 
 #field .unit img{
